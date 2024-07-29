@@ -17,14 +17,14 @@ This project revolves around the optimization of travel routes between service s
 - Each service station is equipped with a fleet of electric rental vehicles.
 - These vehicles are defined by their battery charge range, measured in kilometers and expressed as a positive integer.
 - The maximum capacity of electric vehicles at a single station is 512.
-- When renting a vehicle at station 's', it is possible to reach any station within the vehicle's range.
+- When renting a vehicle at station ```s```, it is possible to reach any station within the vehicle's range.
 
 ## Journeys and Stops
 
 - A journey is represented as a sequence of service stations where the driver makes stops.
 - The journey commences at one service station and concludes at another, with the possibility of passing through zero or more intermediate stations.
 - Drivers are not allowed to backtrack during the journey, and a new vehicle must be rented at each station stop.
-- Consequently, for two consecutive stops 's' and 't', 't' must always be farther from the starting point than 's', and 't' must be reachable using one of the available vehicles at 's'.
+- Consequently, for two consecutive stops ```s``` and ```t```, ```t``` must always be farther from the starting point than ```s```, and ```t``` must be reachable using one of the available vehicles at ```s```.
 
 ## Project Objective
 
@@ -34,9 +34,10 @@ The main objective of this project is to plan routes with the fewest stops betwe
 
 In cases of routes with an equal number of stops, the criteria for selection are as follows:
 
-- Consider the set of n tied routes, denoted as P = {p1, p2, ..., pn}.
-- Each route is a tuple of m elements, with pi = ⟨pi,1, pi,2, ..., pi,m⟩ representing the distances from the expressway's origin for each stop in the order of the route.
-- The unique route pi should be chosen such that no other route pj exists with the same k final stops followed by a stop with a shorter distance. Formally, ∄j, k: ⟨pi,m-k+1, ..., pi,m⟩ = ⟨pj,m-k+1, ..., pj,m⟩ and pj,m-k < pi,m-k.
+- Consider the set of n tied routes, denoted as ```P = {p1, p2, ..., pn}.```
+- Each route is a tuple of m elements, with ```pi = ⟨pi,1, pi,2, ..., pi,m⟩``` representing the distances from the expressway's origin for each stop in the order of the route.
+- The unique route pi should be chosen such that no other route pj exists with the same k final stops followed by a stop with a shorter distance. Formally,
+  ```∄j, k: ⟨pi,m-k+1, ..., pi,m⟩ = ⟨pj,m-k+1, ..., pj,m⟩ and pj,m-k < pi,m-k.```
 
 This project aims to address the challenges of expressway route planning while adhering to the stated objectives and criteria.
 

@@ -1,6 +1,6 @@
 # Algorithms project poliMi-2023
 
-This project involves planning the most efficient route between two expressway stations, minimizing stops. It prioritizes shorter distances from the expressway's start and avoiding duplicate routes.
+This project involves planning the most efficient route between two expressway stations, minimizing stops. It prioritizes shorter distances from the expressway's start and avoiding duplicate routes. Grade: 30/30 cum laude.
 
 ## Introduction
 
